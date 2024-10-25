@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Calculator FX-82MS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="display">
+            <input type="text" id="calc-display" disabled>
+        </div>
+        <div class="buttons">
+            <!-- Row 1 -->
+            <button class="btn green" onclick="clearDisplay()">AC</button>
+            <button class="btn green" onclick="deleteChar()">DEL</button>
+            <button class="btn" onclick="input('(')">(</button>
+            <button class="btn" onclick="input(')')">)</button>
+            
+            <!-- Row 2 -->
+            <button class="btn" onclick="input('sin(')">sin</button>
+            <button class="btn" onclick="input('cos(')">cos</button>
+            <button class="btn" onclick="input('tan(')">tan</button>
+            <button class="btn orange" onclick="input('/')">÷</button>
+
+            <!-- Row 3 -->
+            <button class="btn" onclick="input('7')">7</button>
+            <button class="btn" onclick="input('8')">8</button>
+            <button class="btn" onclick="input('9')">9</button>
+            <button class="btn orange" onclick="input('*')">×</button>
+
+            <!-- Row 4 -->
+            <button class="btn" onclick="input('4')">4</button>
+            <button class="btn" onclick="input('5')">5</button>
+            <button class="btn" onclick="input('6')">6</button>
+            <button class="btn orange" onclick="input('-')">−</button>
+
+            <!-- Row 5 -->
+            <button class="btn" onclick="input('1')">1</button>
+            <button class="btn" onclick="input('2')">2</button>
+            <button class="btn" onclick="input('3')">3</button>
+            <button class="btn orange" onclick="input('+')">+</button>
+
+            <!-- Row 6 -->
+            <button class="btn" onclick="input('log(')">log</button>
+            <button class="btn" onclick="input('0')">0</button>
+            <button class="btn equal" onclick="calculate()">=</button>
+            <button class="btn" onclick="input('ln(')">ln</button>
+            <button class="btn" onclick="input('.')">.</button>
+            <button class="btn" onclick="input('^2')">x²</button>
+            
+           
+            <!-- Row 7 -->
+            
+            <button class="btn" onclick="input('^3')">x³</button>
+            <button id="deg-rad-btn" class="btn blue" onclick="toggleDegreeRadian()">DEG</button>
+            <button class="btn" onclick="input('π')">π</button>
+            <button class="btn" onclick="input('Math.sqrt(')">√</button>
+            <button class="btn" onclick="input('^')">x^y</button>
+            
+            
+            
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
